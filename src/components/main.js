@@ -43,14 +43,7 @@ function Main() {
                 <div class ="teamItem teamItem_open">
                   <li>
                     <div class="teamItem_schedule">
-                      <button onClick={ () =>
-                        board1.map((deletedata, j) => {
-                          if(deletedata.id == data.id) {
-                            board1.splice(i,1)
-                          }
-                        },  navigate("/"))
-                        
-                      }>삭제</button>
+                      
                       
                       <p class="teamItem_schetitle">시작 예정일 |</p>
                       <p>{board1[i].start}</p>
@@ -64,30 +57,31 @@ function Main() {
                       <li>
                         "#"
                         <br></br>
-                        "프로젝트"
+                        {board1[i].sep}
             
                       </li>
                       <li>
                         "#"
                         <br></br>
-                        "오프라인"
+                        {board1[i].hash}
                       </li>
-                      <li>
-                        "#"
-                        <br></br>
-                        "10명"
-                      </li>
-                      <li>
-                        "#"
-                        <br></br>
-                        "6개월"
-                      </li>
+                      
+                      
                         
                     </ul>
                     <section class="teamItem_info">
                       <div class="user_box">
                         <div class="userName">{board1[i].userName}</div>
+                        
                       </div>
+                      <button className = "del_button" onClick={ () =>
+                        board1.map((deletedata, j) => {
+                          if(deletedata.id == data.id) {
+                            board1.splice(i,1)
+                          }
+                        },  navigate("/"))
+                        
+                      }>delete</button>
                       
                       
                     </section>
@@ -101,14 +95,7 @@ function Main() {
                   <div class ="teamItem teamItem_open">
                     <li>
                       <div class="teamItem_schedule">
-                        <button onClick={ () =>
-                          board1.map((deletedata, j) => {
-                            if(deletedata.id == data.id) {
-                              board1.splice(i,1)
-                            }
-                          },  navigate("/"))
-                          
-                        }>삭제</button>
+                        
                         
                         <p class="teamItem_schetitle">시작 예정일 |</p>
                         <p>{board1[i].start}</p>
@@ -119,33 +106,32 @@ function Main() {
                           navigate("/Teamdetail")
                         }   }> {board1[i].title}</span></h1>
                       <ul class = "teamItem_hashtag">
-                        <li>
-                          "#"
-                          <br></br>
-                          "프로젝트"
-              
-                        </li>
-                        <li>
-                          "#"
-                          <br></br>
-                          "오프라인"
-                        </li>
-                        <li>
-                          "#"
-                          <br></br>
-                          "10명"
-                        </li>
-                        <li>
-                          "#"
-                          <br></br>
-                          "6개월"
-                        </li>
+                      <li>
+                        "#"
+                        <br></br>
+                        {board1[i].sep}
+            
+                      </li>
+                      <li>
+                        "#"
+                        <br></br>
+                        {board1[i].hash}
+                      </li>
+                      
                           
                       </ul>
                       <section class="teamItem_info">
                         <div class="user_box">
                           <div class="userName">{board1[i].userName}</div>
                         </div>
+                        <button className = "del_button" onClick={ () =>
+                        board1.map((deletedata, j) => {
+                          if(deletedata.id == data.id) {
+                            board1.splice(i,1)
+                          }
+                        },  navigate("/"))
+                        
+                      }>delete</button>
                         
                         
                       </section>

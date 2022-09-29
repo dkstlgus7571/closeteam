@@ -35,6 +35,13 @@ function Writing() {
                        <input className="detail_input" type="text" placeholder="유저네임" id="name"></input>
 
                     </div>
+
+                    <div className="detail_input_outer">
+                       <input className="detail_input" type="text" placeholder="분류(프론트엔드,백엔드,기타)" id="sep"></input>
+                       <input className="detail_input" type="text" placeholder="해쉬태그 짧은 글" id="hash"></input>
+                    </div>
+
+                    
                    
                     
                 </div>
@@ -69,6 +76,9 @@ function Writing() {
         var writeintro = document.getElementById('intro').value;
         var writeprogress = document.getElementById('progress').value;
         var writename = document.getElementById('name').value;
+        var writesep = document.getElementById('sep').value;
+        var writehash = document.getElementById('hash').value;
+        
         board1.push({
             id : milseconds,
             title: writetitle, 
@@ -79,7 +89,10 @@ function Writing() {
             start: writestart,
             progress: writeprogress,
             country: writeregion,
-            userName: writename
+            userName: writename,
+            sep: writesep,
+            hash: writehash
+            
         })
     }
 }
