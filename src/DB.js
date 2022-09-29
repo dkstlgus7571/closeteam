@@ -4,22 +4,23 @@ import {useState} from 'react';
 
 
 const database = create(() => ({
-    board1 : [{id:"0",
-    title:"[UI/UX] 취업용 포트폴리오 만드실 디자이너 한 분 모집합니다.", 
-    content:"안녕하세요! 취업용 포트폴리오를 위한 프로젝트에 함께 하실 디자이너 한 분을 모시고자 합니다. 프로젝트 주제는 개발자를 위한 커뮤니티로 생각하고 있으며, 구현 예정인 기능에 대해 논의가 진행되고 있는 상태입니다!",
-    userName:"이정현", date:"2개월",
-    hash:"포트폴리오", personnel:"2명", 
-    sep:"프론트엔드", way:"온라인", progress:"현재 프로젝트를 함께 진행하는 모든 인원은 취업 준비 중으로, 본 프로젝트에 애정을 갖고 진행해주실 수 있는 분을 선호합니다! 많은 관심 부탁드립니다!😊",
-    area:"아산", place:"place", start: "2022.11.04" },
+    board1 : 
+    [{  id:"0",
+        title:"[UI/UX] 취업용 포트폴리오 만드실 디자이너 한 분 모집합니다.", 
+        content:"안녕하세요! 취업용 포트폴리오를 위한 프로젝트에 함께 하실 디자이너 한 분을 모시고자 합니다. 프로젝트 주제는 개발자를 위한 커뮤니티로 생각하고 있으며, 구현 예정인 기능에 대해 논의가 진행되고 있는 상태입니다!",
+        userName:"이정현", date:"2개월",
+        hash:"포트폴리오", personnel:"2명", 
+        sep:"프론트엔드", way:"온라인", progress:"현재 프로젝트를 함께 진행하는 모든 인원은 취업 준비 중으로, 본 프로젝트에 애정을 갖고 진행해주실 수 있는 분을 선호합니다! 많은 관심 부탁드립니다!😊",
+        area:"아산", place:"place", start: "2022.11.04" },
 
     {
-    id:"1",
-    title:"안양지역, Kotlin 같이 공부하실 분 모집", 
-    content:"Kotlin언어를 시작으로, Ktor, Exposed 등을 공부하려는 스터디입니다. 시작은 Kotlin만 약 1~2달정도 생각하고 있고, 이후에 Ktor, Exposed 배워보려고 합니다. 모집은 10.3일까지 생각합니다. 그럼.",
-    userName:"이민준", date:"6개월",
-    hash:"안양", personnel:"4명", 
-    sep:"프론트엔드", way:"오프라인", progress:"일주일에 1회 offline(Max 2시간정도 생각)으로 모이고, 그외에는 텔레그램이나 슬랙으로 서로 교류하는 정도로.",
-    area:"천안", place:"place", start: "2022.11.22"
+        id:"1",
+        title:"안양지역, Kotlin 같이 공부하실 분 모집", 
+        content:"Kotlin언어를 시작으로, Ktor, Exposed 등을 공부하려는 스터디입니다. 시작은 Kotlin만 약 1~2달정도 생각하고 있고, 이후에 Ktor, Exposed 배워보려고 합니다. 모집은 10.3일까지 생각합니다. 그럼.",
+        userName:"이민준", date:"6개월",
+        hash:"안양", personnel:"4명", 
+        sep:"프론트엔드", way:"오프라인", progress:"일주일에 1회 offline(Max 2시간정도 생각)으로 모이고, 그외에는 텔레그램이나 슬랙으로 서로 교류하는 정도로.",
+        area:"천안", place:"place", start: "2022.11.22"
     },
 
     {
