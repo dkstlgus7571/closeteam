@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/closeteam/static/css/main.2f0e0690.css",
+    "main.js": "/closeteam/static/js/main.9119eea4.js",
+    "static/js/787.5f495c46.chunk.js": "/closeteam/static/js/787.5f495c46.chunk.js",
+    "static/media/logo.svg": "/closeteam/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/closeteam/index.html",
+    "main.2f0e0690.css.map": "/closeteam/static/css/main.2f0e0690.css.map",
+    "main.9119eea4.js.map": "/closeteam/static/js/main.9119eea4.js.map",
+    "787.5f495c46.chunk.js.map": "/closeteam/static/js/787.5f495c46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f0e0690.css",
+    "static/js/main.9119eea4.js"
+  ]
+}
